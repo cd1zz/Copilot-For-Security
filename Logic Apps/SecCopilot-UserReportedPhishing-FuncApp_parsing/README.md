@@ -1,5 +1,5 @@
 # User Submitted Phishing Analysis with Security Copilot
-This solution automates the analysis of user-submitted phishing emails using Copilot for Security. It monitors a shared inbox, triggering a Logic App upon new email arrival. The Logic App processes the email using a Function App, which extracts relevant details, leverages the MDTI Copilot for Security Skills for reputation insights, and sends the results to an email recipient. 
+This solution automates the analysis of user-submitted phishing emails using Security Copilot. It monitors a shared inbox, triggering a Logic App upon new email arrival. The Logic App processes the email using a Function App, which extracts relevant details, leverages the MDTI Security Copilot Skills for reputation insights, and sends the results to an email recipient. 
 
 ## Deploy the Solution
 
@@ -84,7 +84,7 @@ This Python Azure Function App is designed to handle HTTP requests containing a 
    - Logs errors if parsing fails or if the JSON structure is unexpected, returning a 500 error with a message.
 
 ### 3. normalize_json
-This Azure Function App is an HTTP-triggered function designed to clean and validate JSON input by removing markdown notations and handling `null` values. It's primary purpose is to accept the Copilot for Security generated JSON notation in markdown and clean it up to be a JSON object.
+This Azure Function App is an HTTP-triggered function designed to clean and validate JSON input by removing markdown notations and handling `null` values. It's primary purpose is to accept the Security Copilot generated JSON notation in markdown and clean it up to be a JSON object.
 
 **Markdown Notation Removal**:
    - Strips markdown annotations, including triple backticks (```json) and alternate markdown notations like `~~~json`, from the JSON input, cleaning the text for valid JSON parsing.
