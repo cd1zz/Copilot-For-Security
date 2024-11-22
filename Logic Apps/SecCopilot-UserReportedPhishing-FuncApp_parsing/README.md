@@ -9,6 +9,9 @@ Click the button below to deploy the Function App. You'll be prompted to select 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FCopilot-For-Security%2Fmain%2FLogic%2520Apps%2FSecCopilot-UserReportedPhishing-FuncApp_parsing%2Ffunctionapp_azuredeploy.json)
 
+If you run into issues, you can create a skelton/empty Function App and deploy via the commandline:
+`az functionapp deployment source config-zip --resource-group yourresourcegroup --name youremptyfunctionapp --src .\FunctionApp.zip` <- ZIP downloaded to your local directory.
+
 ### Step 2: Deploy the Logic App
 
 Click the button below to deploy the Logic App. Note your Function App name & resource group from the previous step. You will enter this information in the deployment screen. 
